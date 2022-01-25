@@ -1,4 +1,6 @@
-const Discord = require('discord.js');
+import Discord from 'discord.js'
+import dotenv from 'dotenv'
+dotenv.config()
 
 const bot = new Discord.Client({
     intents: [
@@ -11,4 +13,4 @@ bot.on("ready", () =>{
     console.log(`logged in as${bot.user.tag}!`)
   });
 
-bot.login('OTEwNTQ0NTI0ODQ4Mjc5NTgy.YZUYqw._4EUJQAS6TJTA6GAAVtC6-KMZu4');
+bot.login(process.env.TOKEN);
