@@ -11,6 +11,6 @@ const bot = new Discord.Client({
 
 bot.on("ready", () =>{
     console.log(`logged in as${bot.user.tag}!`)
-  });
+});
 
 bot.login(process.env.TOKEN);
